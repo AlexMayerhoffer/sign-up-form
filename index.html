@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-  <title>Sign Up Form</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title_bg">
+        <img class="icon" src="/assets/coffee-cup-svgrepo-com.svg" />
+        <h1 class="title">COFFEE</h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="header_text">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your biggest dreams.
+          <br />
+          Sign up to get started.
+          <br /><br />
+          You know you want to.
+        </p>
+      </div>
+      <form action="" method="post">
+        <div class="form_panel">
+          <h2>Let's do this!</h2>
+
+          <div class="form_row">
+            <div class="form_input">
+              <label for="first_name" class="form_label">
+                FIRST NAME
+              </label>
+              <input id="first_name" type="text" class="form_text_input" minlength="3" maxlength="20" required placeholder=" ">
+            </div>
+            <div class="form_input">
+              <label for="last_name" class="form_label">
+                LAST NAME
+              </label>
+              <input id="last_name" type="text" class="form_text_input" minlength="3" maxlength="20" required placeholder=" ">
+            </div>
+          </div>
+
+          <div class="form_row">
+            <div class="form_input">
+              <label for="email" class="form_label">
+                EMAIL
+              </label>
+              <input id="email" type="email" class="form_text_input" required placeholder=" ">
+            </div>
+            <div class="form_input">
+              <label for="phone_no" class="form_label">
+                PHONE NUMBER
+              </label>
+              <input id="phone_no" type="tel" class="form_text_input" minlength="10" maxlength="10" required placeholder=" ">
+            </div>
+          </div>
+
+          <div class="form_row">
+            <div class="form_input">
+              <label for="password" class="form_label">
+                PASSWORD
+              </label>
+              <input id="password" type="password" class="form_text_input"minlength="6" maxlength="14" required placeholder=" ">
+            </div>
+            <div class="form_input">
+              <label for="password_confirm" class="form_label">
+                CONFIRM PASSWORD
+              </label>
+              <input id="password_confirm" type="password" class="form_text_input"minlength="6" maxlength="13" required placeholder=" ">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="form_button">CREATE ACCOUNT</button>
+        <p>Already have an account? <span>Log in</span></p>
+      </form>
+    </div>
+  </body>
 </html>
