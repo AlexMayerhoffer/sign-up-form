@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  background-image: url(/assets/maksym-tymchyk-u8rOxe5mLHc-unsplash.jpg);
+  background-image: url("https://raw.githubusercontent.com/AlexMayerhoffer/sign-up-form/main/assets/maksym-tymchyk-u8rOxe5mLHc-unsplash.jpg");
   background-size:cover;
   min-width: max(35%,350px);
   width: 35%;
