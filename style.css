@@ -125,14 +125,12 @@ body {
 }
 
 form .form_button {
-  margin-left: 30px;
-  margin-top: 2rem;
-
   border-radius: 0.3rem;
   border-style: none;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   font-weight: 600;
   color:white;
+  height: 4rem;
   background-color: rgb(199, 76, 54);
   cursor: pointer;
 }
@@ -143,6 +141,7 @@ form .form_button:hover {
 
 form > p {
   margin-left: 30px;
+  margin-bottom: 1rem;
 }
 
 form > p > span {
@@ -150,9 +149,16 @@ form > p > span {
   color: rgb(199, 76, 54);
 }
 
-form .form_input {
-  
+.content .form_result {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 1.5rem;
+}
 
+.content .form_result>p {
+  margin-left:1rem;
 }
 
 
@@ -178,5 +184,47 @@ form .form_input {
   .header .title_bg {
     top: 0;
     background-color: rgb(0,0,0,0.3);
+  }
+
+  .content .header_text {
+    padding: 1rem;
+    /* height: calc(10vh + 8rem); */
+    /* background-color: blueviolet; */
+    width:100;
+    /* position:relative; */
+  }
+  
+  .content .header_text p {
+    font-size: 1em;
+    font-weight: 600;
+    /* position:absolute; */
+    /* bottom: 10%; */
+    text-align: center;
+  }
+
+  .form_panel {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+  }
+
+  .form_panel .form_row {
+    margin:0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .content .form_result {
+    flex-flow: column wrap;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  form > p {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
